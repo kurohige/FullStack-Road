@@ -1,0 +1,228 @@
+/* CSS HEX 
+--charcoal: #264653ff;
+--persian-green: #2a9d8fff;
+--orange-yellow-crayola: #e9c46aff;
+--chocolate-web: #d2660fff;
+--burnt-sienna: #e76f51ff;
+font-family: 'Bakbak One', cursive;
+font-family: 'Genos', sans-serif;
+*/
+
+
+/*  ~~~~~~~~~~ Global Styles ~~~~~~~~~ */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #264653ff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bakbak One', cursive;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+
+img {
+    width: 300px;
+}
+
+a {
+    color: rgb(190, 67, 36);
+    /*font-weight: bold;*/
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 75px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h1,
+h2 {
+    font-family: 'Genos', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.item-details h3+p {
+    font-style: italic;
+}
+
+.item-details h3~p {
+    margin: 0;
+}
+
+.divider>section {
+    border-bottom: 1px double #d2660fff;
+    padding: 25px 0;
+}
+
+.divider>section:last-of-type {
+    border-bottom: none;
+}
+
+
+/*  ~~~~~~~~~~ profile ~~~~~~~~~ */
+
+header {
+    /* background-color: rgb(200, 156, 44); */
+    background-image: url(../images/head-background.png);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 20px;
+    color: #85144b;
+}
+
+
+/*  ~~~~~~~~~~ projects ~~~~~~~~~ */
+
+
+/* 
+.projects {
+    background: #F7FFF7;
+}
+
+.projects a {
+    color: #2F3061;
+}
+
+.projects .btn {
+    color: #F7FFF7;
+    background: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.projects .btn:hover {
+    background: rgba(47, 48, 97, 80%);
+}
+
+.project-item {
+    overflow: hidden;
+}
+
+.project-item h3 {
+    margin-top: 0;
+} */
+
+
+/*  ~~~~~~~~~~ work experience ~~~~~~~~~ */
+
+.work-experience {
+    /* background: rgb(158, 79, 14); */
+    background-image: url(../images/work-background.png);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 20px;
+    color: #101610;
+}
+
+.voluntering {
+    background: rgb(4, 82, 76);
+    color: #f7fff7;
+}
+
+
+/*  ~~~~~~~~~~ education ~~~~~~~~~ */
+
+.education {
+    /* background: rgb(65, 178, 243); */
+    background-image: url(../images/Edu-background.png);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+    color: #445158;
+}
+
+.education p {
+    width: 60%;
+}
+
+
+/*  ~~~~~~~~~~ Contact Infor - Footer ~~~~~~~~~ */
+
+footer {
+    /* background: #47624fff; */
+    background-image: url(../images/contact-background.png);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 20px;
+    color: #F7FFF7;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+}
+
+
+/* Responsive
+------------------------------------*/
+
+@media screen and (min-width:750px) {
+    header,
+    footer {
+        text-align: center;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:749px) {
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2 {
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+}
